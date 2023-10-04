@@ -1,3 +1,4 @@
+
 # EXP NO 1: DATA DEFINITION LANGUGE COMMANDS IN RDBMS
 
 ## AIM:
@@ -23,50 +24,66 @@ RENAME: This is used to rename an object existing in the database.
 
 ### SQL QUERY: 
 ```
-CREATE TABLE student(
-    rollno numeric(5),name char(50),age numeric(5),
-    address varchar(100),
-    phoneno numeric(10)
-    );
+create table Studentsdetails(rollno numeric(12),name varchar(20),age numeric(2),address varchar(100),phoneno numeri
+c(10));
+
 ```
 
+
+
 ### OUTPUT:
-![image](https://github.com/harinidq/G2_DBMS/assets/113497680/84dc2b97-4b33-42ed-9ed1-9676b7ccc5a9)
+![image](https://github.com/svarsha220/F2_DBMS/assets/127709117/d50fbdc6-f2c3-4f72-b8a4-04a8a034db24)
+
+
 
 ### 2) Change the above student table by adding another attribute department
 
 ### SQL QUERY: 
 ```
-ALTER TABLE student ADD Department char(10);
+alter table Studentsdetails add dept char(20);
+
 ```
 ### OUTPUT:
-![image](https://github.com/harinidq/G2_DBMS/assets/113497680/134e68a7-37d4-4cec-9595-1dbd3252cead)
+![image](https://github.com/svarsha220/F2_DBMS/assets/127709117/8d0cc7e6-d98d-4ab3-84a3-55d6c6b9e371)
+
 
 ### 3) Drop the student table
- 
+
+
 ### SQL QUERY: 
+ ```
+ drop table Studentsdetails;
+
 ```
-DROP TABLE student;
-```
+
+
 ### OUTPUT:
-![image](https://github.com/harinidq/G2_DBMS/assets/113497680/7dad242e-374d-481a-a3e4-494694c70901)
+
+![image](https://github.com/svarsha220/F2_DBMS/assets/127709117/f5d91048-4196-4624-b28a-c74d318d191d)
 
 ### 4) Delete the student table using truncate keyword
 
-### SQL QUERY:
+### SQL QUERY: 
+
 ```
-TRUNCATE TABLE student;
+
+truncate table Studentsdetails;
+
 ```
 ### OUTPUT:
-![image](https://github.com/harinidq/G2_DBMS/assets/113497680/e4544b51-e759-46ca-98fb-790a220a244a)
+![image](https://github.com/svarsha220/F2_DBMS/assets/127709117/edc738b5-fd90-49e8-a4a3-f3d5ea0b59e1)
+
+
+
 
 ### 5) Rename the student table to mystudent
 
 ### SQL QUERY: 
 ```
-ALTER TABLE student RENAME TO mystudent;
+
+alter table Studentsdetails rename to my_student;
+
 ```
+
 ### OUTPUT:
-![image](https://github.com/harinidq/G2_DBMS/assets/113497680/e8788baf-ddf4-43c3-9d8a-e1c3d2d79a6a)
-### RESULT:
-Thus a student database has been created and DDL queries are executed successfully.
+![image](https://github.com/svarsha220/F2_DBMS/assets/127709117/dec072ab-a106-41db-b627-568d013cf71b)
