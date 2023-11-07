@@ -1,6 +1,5 @@
-
 # EXP NO 1: DATA DEFINITION LANGUGE COMMANDS IN RDBMS
-## DATE: : 04/08/2023
+## Date: 04/08/23
 ## AIM:
 To create a student database and execute DDL queries using SQL.
 
@@ -24,66 +23,56 @@ RENAME: This is used to rename an object existing in the database.
 
 ### SQL QUERY: 
 ```
-create table Studentsdetails(rollno numeric(12),name varchar(20),age numeric(2),address varchar(100),phoneno numeri
-c(10));
-
+create table student(rollno int,name char(20),age int,addr varchar(20),phoneno int);
 ```
 
-
-
 ### OUTPUT:
-![image](https://github.com/svarsha220/F2_DBMS/assets/127709117/d50fbdc6-f2c3-4f72-b8a4-04a8a034db24)
 
-
+![image](https://github.com/22008539/G2_DBMS/assets/118707617/d4078461-29d3-4714-aa2b-d859b4552fa6)
 
 ### 2) Change the above student table by adding another attribute department
 
 ### SQL QUERY: 
 ```
-alter table Studentsdetails add dept char(20);
-
+alter table student add department char(30);
 ```
 ### OUTPUT:
-![image](https://github.com/svarsha220/F2_DBMS/assets/127709117/8d0cc7e6-d98d-4ab3-84a3-55d6c6b9e371)
+![image](https://github.com/22008539/G2_DBMS/assets/118707617/2c22e52a-f697-4647-8c27-19b5dbb87d15)
 
 
 ### 3) Drop the student table
-
-
+ 
 ### SQL QUERY: 
- ```
- drop table Studentsdetails;
-
 ```
-
-
+drop table student;
+```
 ### OUTPUT:
+![image](https://github.com/22008539/G2_DBMS/assets/118707617/d0c90400-b82a-4d48-898f-1d18b60f2f8a)
 
-![image](https://github.com/svarsha220/F2_DBMS/assets/127709117/f5d91048-4196-4624-b28a-c74d318d191d)
 
 ### 4) Delete the student table using truncate keyword
 
 ### SQL QUERY: 
-
+```
+truncate table student;
 ```
 
-truncate table Studentsdetails;
-
-```
 ### OUTPUT:
-![image](https://github.com/svarsha220/F2_DBMS/assets/127709117/edc738b5-fd90-49e8-a4a3-f3d5ea0b59e1)
 
-
+![image](https://github.com/22008539/G2_DBMS/assets/118707617/a7cf6059-f7e7-4b7f-9db9-8e45b0246324)
 
 
 ### 5) Rename the student table to mystudent
 
 ### SQL QUERY: 
-```
-
-alter table Studentsdetails rename to my_student;
 
 ```
-
+alter table student rename to mystudent;
+```
 ### OUTPUT:
-![image](https://github.com/svarsha220/F2_DBMS/assets/127709117/dec072ab-a106-41db-b627-568d013cf71b)
+![image](https://github.com/22008539/G2_DBMS/assets/118707617/9d838847-3a92-4ec4-a2e6-a98d06085ad0)
+
+
+### RESULT:
+
+To create a student database and execute DDL queries using SQL is executed successfully.
